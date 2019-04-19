@@ -18,11 +18,11 @@ app.use(express.static("client/build"));
 
 app.get("/greet", (req, res) => {
   console.log("url == ", req.url);
-  res.send("goood morning");
+  res.send("welcome...!!!");
 });
 
 app.post("/addUser", (req, res) => {
-  res.send(req.body.username);
+  res.send("hiii, " + req.body.username + "!!!!");
 });
 
 app.get(/\/increment\/*/, (req, res) => {

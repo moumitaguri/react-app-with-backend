@@ -32,6 +32,7 @@ class App extends Component {
           <button onClick={this.handleClick.bind(this)}>Increment</button>
           <button>{this.state.count}</button>
         </div>
+        <div />
       </main>
     );
   }
